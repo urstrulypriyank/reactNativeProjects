@@ -12,33 +12,31 @@ export default function FlatCard() {
     <View>
       <Text style={styles.headingText}>Flat Card</Text>
       <View style={[styles.cardWrapper]}>
-        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-          <TouchableOpacity>
-            <View style={[styles.card, styles.card1]}>
-              <Text>box-1</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <View style={[styles.card, styles.card2]}>
-              <Text>box-2</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <View style={[styles.card, styles.card3]}>
-              <Text>box-3</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <View style={[styles.card, styles.card3]}>
-              <Text>box-3</Text>
-            </View>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <View style={[styles.card, styles.card3]}>
-              <Text>box-3</Text>
-            </View>
-          </TouchableOpacity>
-        </ScrollView>
+        <TouchableOpacity>
+          <View style={[styles.card, styles.card1]}>
+            <Text>box-1</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={[styles.card, styles.card2]}>
+            <Text>box-2</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={[styles.card, styles.card3]}>
+            <Text>box-3</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={[styles.card, styles.card3]}>
+            <Text>box-3</Text>
+          </View>
+        </TouchableOpacity>
+        <TouchableOpacity>
+          <View style={[styles.card, styles.card3]}>
+            <Text>box-3</Text>
+          </View>
+        </TouchableOpacity>
       </View>
     </View>
   );
@@ -55,6 +53,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     flex: 1,
     marginHorizontal: 4,
+    width: "20%",
   },
   card: {
     width: 100,
