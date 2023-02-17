@@ -12,12 +12,13 @@ export default function FancyCards() {
         />
         <View style={styles.cardBody}>
           <Text style={styles.cardBodyTitle}>The title</Text>
-          <Text>
+          <Text style={styles.cardDescription}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit ipsa
             labore, molestiae porro est in placeat esse dignissimos quas fugiat
             a iusto odio recusandae voluptas voluptates cupiditate id impedit
             nam.
           </Text>
+          <Text style={styles.footer}>12 mins away</Text>
         </View>
       </View>
     </View>
@@ -25,29 +26,37 @@ export default function FancyCards() {
 }
 const styles = StyleSheet.create({
   headingText: {
-    textAlign: 'center',
-    fontSize: 24,
     fontWeight: 'bold',
-    paddingVertical: 6,
+    fontSize: 24,
+    marginVertical: 10,
+    textAlign: 'center',
+  },
+  cardImg: {
+    height: 200,
+    borderTopLeftRadius: 10,
+    borderTopRightRadius: 10,
   },
   wrapperCard: {
-    backgroundColor: 'grey',
-    // borderRadius: 20,
-    paddingVertical: 6,
-    paddingHorizontal: 6,
-  },
-  card: {},
-  cardImg: {
-    // width: '100%',
-    height: 180,
-    margin: 6,
+    marginHorizontal: 10,
+    marginVertical: 10,
   },
   cardBody: {
-    position: 'absolute',
-    
-
+    backgroundColor: 'grey',
   },
   cardBodyTitle: {
-    textAlign: 'center',
+    fontWeight: 'bold',
+    fontSize: 18,
+    marginLeft: 5,
+    paddingVertical: 10,
+  },
+  cardDescription: {
+    marginLeft: 6,
+    paddingBottom: 10,
+  },
+  footer: {
+    marginLeft: 6,
+    paddingBottom: 10,
+    fontWeight: 600,
+    fontSize: 14,
   },
 });
